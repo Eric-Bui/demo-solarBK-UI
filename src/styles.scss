@@ -1,1 +1,37 @@
 /* You can add global styles to this file, and also import other style files */
+
+@font-face {
+  src: url(./assets/fonts/Roboto-Light.ttf);
+  font-family: Roboto;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+}
+
+$primary-color: #0ea287;
+$secondara-color: #89c941;
+$white-color: #fff;
+$black-color: #000;
+
+.btn-solar {
+  background-color: $primary-color;
+  color: $white-color;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  padding: 10px 20px;
+  border-radius: 30px;
+  transition: .2s;
+
+  &:hover {
+    color: $white-color;
+    background: #08A045;
+  }
+
+  &:focus {
+    box-shadow: none;
+    outline: none;
+  }
+}

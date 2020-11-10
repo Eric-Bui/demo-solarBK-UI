@@ -1,0 +1,64 @@
+<div class="container-fluid">
+  <div class="note-message">
+    <p>Tên tài khoản không tồn tại</p>
+  </div>
+    <div class="background-img">
+      <img src="../../../assets/images/background.jpg" alt="" />
+    </div>
+    <div class="wrapper">
+    <div class="landing-slogan">
+      <h2 class="landing-title">THAY ĐỔI NHỎ KHÁC BIỆT LỚN</h2>
+      <P class="landing-content"
+        >Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus
+        quidem accusantium aliquid officia tempore voluptatum in vel inventore,
+        dolore recusandae?</P
+      >
+      <button class="btn-solar">Xem Thêm</button>
+    </div>
+    <div class="user-login">
+      <!-- Nav tabs -->
+      <ul class="nav nav-tabs">
+        <li class="nav-item">
+          <a class="nav-link active" href="#login">Đăng nhập</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#solarBK">Đăng nhập với IDsolarBK</a>
+        </li>
+      </ul>
+
+      <!-- Tab panes -->
+      <div class="tab-content">
+        <div id="login" class="container tab-pane active">
+          <br />
+          <form id="form_login" class="form-login" (ngSubmit)="onLogin()" [formGroup]="loginForm">
+            <div class="form-group">
+              <label for="exampleInputEmail1">Tên đăng nhập</label>
+              <input
+                formControlName="email"
+                type="email"
+                class="form-control form-login"
+                id="exampleInputEmail1"
+                aria-describedby="emailHelp"
+              />
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Mật khẩu</label>
+              <input
+                formControlName="password"
+                type="password"
+                class="form-control form-login"
+                id="exampleInputPassword1"
+              />
+            </div>
+            <button type="submit" class="btn btn-solar">Đăng Nhập</button>
+          </form>
+        </div>
+        <div id="solarBK" class="container tab-pane fade">
+          <br />
+          <h5>Đăng nhập bằng tài khoản của nhân viên SolarBK</h5>
+          <button class="btn-solar">Đăng Nhập</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
