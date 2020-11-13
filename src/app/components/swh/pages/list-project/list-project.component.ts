@@ -7,9 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ListProjectComponent implements OnInit {
 
+
   constructor() { }
 
   ngOnInit(): void {
+    $('.sidebar').hide();
   }
 
 }
