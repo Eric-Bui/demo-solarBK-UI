@@ -1,0 +1,76 @@
+svg {
+  width: 15px;
+  height: 15px;
+}
+table {
+  td,
+  th {
+    vertical-align: middle;
+    text-align: center;
+  }
+  td {
+    font-size: 16px;
+    &.action {
+      overflow: hidden;
+      position: relative;
+      .confirm {
+        position: absolute;
+        top: 15px;
+        right: 0;
+        width: 100%;
+        transform: translateX(100%);
+        transition: 0.3s;
+        .content {
+          padding: 13px 30px;
+          background: #ced4da;
+          button {
+            border: 1px solid #000;
+            transition: 0.3s;
+            &.btn-cancel {
+              background: #fff;
+              color: #000;
+              margin-right: 3px;
+              &:hover {
+                background: #000;
+                color: #fff;
+              }
+            }
+            &.btn-delete {
+              background: #000;
+              color: #fff;
+            }
+          }
+        }
+      }
+      .open {
+        transform: translateX(0);
+      }
+    }
+  }
+}
+.status {
+  position: relative;
+}
+
+.card-body {
+  min-height: calc(100vh - 255px);
+  .not-found {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .card-title {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .add-product {
+      .button {
+        background: #242939;
+        color: #fff;
+      }
+    }
+  }
+}

@@ -1,1 +1,13 @@
-<p>admin works!</p>
+
+<div class="wrapper_admin default-theme" style="margin-top: 60px;">
+    <app-header-admin></app-header-admin>
+    <main>
+      <app-sidebar></app-sidebar>
+      <div class="pages container-fluid p-4 " style="height: calc(100vh - 60px);">
+        <router-outlet></router-outlet>
+        <hr>
+        <app-footer></app-footer>
+      </div>
+      <div class="overlay"></div>
+    </main>
+  </div>

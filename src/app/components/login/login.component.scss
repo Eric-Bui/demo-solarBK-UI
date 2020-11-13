@@ -1,14 +1,17 @@
+#btn_login {
+  min-width: 115px;
+}
 
 .container-fluid {
   position: relative;
   overflow: hidden;
 
-  .note-message {
+  .message-error {
     position: absolute;
     right: 0;
     top: 20px;
     transform: translateX(100%);
-    transition: .3s;
+    transition: 0.3s;
 
     p {
       padding: 20px 30px;
@@ -24,7 +27,7 @@
   .background-img {
     position: absolute;
     margin: 0 -15px;
-    opacity: .5;
+    opacity: 0.5;
     z-index: -1;
   }
 
@@ -35,7 +38,7 @@
     height: 100vh;
     width: 88%;
     margin: 0 auto;
-  
+
     .landing-slogan {
       .landing-title {
         margin-bottom: 20px;
@@ -52,7 +55,7 @@
 
     .user-login {
       width: 40%;
-      background: rgba(255, 255, 255, .7);
+      background: rgba(255, 255, 255, 0.7);
       padding: 30px;
       border-radius: 10px;
       min-height: 420px;
@@ -78,15 +81,15 @@
             border-radius: 0;
             background: transparent;
             border: 0;
-            border-bottom: 1px solid rgba(0, 0, 0, .3);
-            transition: .2s;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+            transition: 0.2s;
             &:focus {
               box-shadow: none;
               border-bottom: 1px solid #0ea287;
             }
           }
 
-          .btn-solar[type='submit'] {
+          .btn-solar[type="submit"] {
             margin-top: 20px;
           }
         }
@@ -103,6 +106,5 @@
         }
       }
     }
-  
   }
 }

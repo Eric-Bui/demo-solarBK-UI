@@ -1,5 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 
+@import "./assets/admin.scss";
+
 @font-face {
   src: url(./assets/fonts/Roboto-Light.ttf);
   font-family: Roboto;
@@ -7,7 +9,7 @@
 
 body {
   font-family: "Roboto", sans-serif;
-  font-weight: 600;
+  font-weight: 400;
 }
 
 $primary-color: #0ea287;
@@ -23,11 +25,11 @@ $black-color: #000;
   box-shadow: none;
   padding: 10px 20px;
   border-radius: 30px;
-  transition: .2s;
+  transition: 0.2s;
 
   &:hover {
     color: $white-color;
-    background: #08A045;
+    background: #08a045;
   }
 
   &:focus {
