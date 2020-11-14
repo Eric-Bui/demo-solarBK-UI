@@ -24,6 +24,31 @@
     }
   }
 
+  .language-list {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    span {
+      display: inline-block;
+      cursor: pointer;
+      img {
+        height: 30px;
+        width: 40px;
+        border-radius: 10px;
+      }
+      .lang-deactive {
+        filter: grayscale(100%);
+      }
+
+      .lang-active {
+        cursor: not-allowed;
+      }
+      &:first-child {
+        margin-right: 10px;
+      }
+    }
+  }
+
   .background-img {
     position: absolute;
     margin: 0 -15px;
@@ -88,10 +113,14 @@
               border-bottom: 1px solid #0ea287;
             }
           }
-
-          .btn-solar[type="submit"] {
-            margin-top: 20px;
+          .form-control-login {
+            display: flex;
+            justify-content: space-between;
+            .forgot-pw {
+              margin-top: auto;
+            }
           }
+
         }
 
         #solarBK {

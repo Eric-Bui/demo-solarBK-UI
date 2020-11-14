@@ -1,0 +1,36 @@
+.nav-report {
+    .nav-item {
+        flex-grow: 1;
+
+        a {
+            color: inherit;
+        }
+    }
+}
+
+svg {
+    height: 20px;
+}
+
+.report-title {
+
+    .filter-content {
+        margin-left: 30px;
+        .filter-input {
+            margin-left: 10px;
+        }
+    }
+    .export-data {
+        text-align: right;
+        margin-right: 30px;
+        span {
+            &:last-child {
+                margin-left: 10px;
+                cursor: pointer;
+            }
+        }
+        img {
+            height: 40px;
+        }
+    }
+}

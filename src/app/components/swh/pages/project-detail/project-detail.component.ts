@@ -11,6 +11,8 @@ export class ProjectDetailComponent implements OnInit {
 
   ngOnInit(): void {
     $('.sidebar').show();
+    $('#navbar_list').hide();
+    $('#navbar_detail').show();
   }
 
 }

@@ -16,12 +16,14 @@ import { AdminComponent } from './components/admin/admin.component';
 import { LoginComponent } from './components/login/login.component';
 import { SwhComponent } from './components/swh/swh.component';
 
+
+
 @NgModule({
   declarations: [
     AppComponent,
     AdminComponent,
     LoginComponent,
-    SwhComponent
+    SwhComponent,
   ],
   imports: [
     BrowserModule,

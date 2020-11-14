@@ -4,7 +4,7 @@ import { FormDirective } from "./../directive/form.directive";
 
 @NgModule({
   declarations: [ FormDirective],
-  imports: [CommonModule],
+  imports: [CommonModule ],
   exports: [ FormDirective],
 })
 export class GlobalModule {}

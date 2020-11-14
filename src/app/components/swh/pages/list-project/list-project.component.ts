@@ -12,6 +12,8 @@ export class ListProjectComponent implements OnInit {
 
   ngOnInit(): void {
     $('.sidebar').hide();
+    $('#navbar_detail').hide();
+    $('#navbar_list').show();
   }
 
 }
