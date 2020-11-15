@@ -1,8 +1,6 @@
-svg {
-  height: 100px;
-  width: 100px;
-  opacity: 0.7;
-  transition: 0.3s;
+.project-content {
+  font-family: Roboto-bold;
+  font-weight: 600;
 }
 
 .project-item {
@@ -13,4 +11,78 @@ svg {
       transform: scale(1.05);
     }
   }
+}
+.card {
+  background: transparent;
+  border: none;
+  box-shadow: none !important;
+  border-radius: 20px !important;
+}
+
+.card-body {
+  padding: 0;
+  .address-content {
+    background: #339836;
+    border-radius: 20px;
+    
+    .address-title {
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+
+      h4 {
+        padding: 20px;
+        border-radius: 20px;
+        background: #006400;
+        width: fit-content;
+        height: fit-content;
+        padding-bottom: 20px;
+        color: #fff;
+      }
+
+      h5 {
+        margin-top: 10px;
+        margin-right: 5px;
+        color: #fff;
+
+        .image-status {
+          display: block;
+          margin-top: 10px;
+        }
+      }
+    }
+    .project-title {
+      color: #fff;
+      text-align: center;
+    }
+  }
+  .image-address {
+    height: 400px;
+    overflow: hidden;
+    img {
+      width: 100%;
+    }
+  }
+}
+
+.card-footer {
+  background: #006400 !important;
+  text-align: center;
+  font-size: 18px;
+  font-weight: normal;
+  border-top: none !important;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  .footer-title {
+    color: #339836;
+
+  }
+  .footer-content {
+    color: #fff;
+    margin-bottom: 20px;
+  }
+}
+
+.project-wrapper {
+  border-radius: 30px;
 }

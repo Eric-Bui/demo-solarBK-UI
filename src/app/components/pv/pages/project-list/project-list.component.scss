@@ -1,0 +1,14 @@
+.project-detail {
+    font-family: Roboto-bold;
+}
+
+.status-content {
+    display: flex;
+    .energy-today {
+        margin-left: auto;
+        text-align: right;
+        h6 {
+            margin-bottom: 15px;
+        }
+    }
+}

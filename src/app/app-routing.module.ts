@@ -3,6 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { AdminComponent } from './components/admin/admin.component';
 import { LoginComponent } from './components/login/login.component';
 import { SwhComponent } from './components/swh/swh.component'
+import { PvComponent } from './components/pv/pv.component';
 
 const routes: Routes = [
   { path: '', component: LoginComponent },
@@ -23,6 +24,16 @@ const routes: Routes = [
       {
         path: '',
         loadChildren: () => import('./components/swh/swh.module').then(m => m.SwhModule)
+      },
+    ],
+  },
+  {
+    path: 'pv',
+    component: PvComponent,
+    children: [
+      {
+        path: '',
+        loadChildren: () => import('./components/pv/pv.module').then(m => m.PvModule)
       },
     ],
   },

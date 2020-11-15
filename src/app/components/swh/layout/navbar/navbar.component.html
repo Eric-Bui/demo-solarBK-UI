@@ -97,11 +97,15 @@
 </nav>
 <!--control table-->
 <div id="control_content" class="control-content">
-  <div class="control-btn" id="btn_control">
-    <span>x</span>
-  </div>
   <div class="control-header">
-    <h4 class="control-title">Tùy chọn</h4>
+    <div class="control-btn" id="btn_control">
+      <span>x</span>
+    </div>
+    <h5 class="control-title">Hệ thống máy nước nóng <br> năng lượng mặt trời</h5>
+    <div class="temp-item">
+      <h3>Nhiệt độ bồn</h3>
+      <span>40 &deg;C</span>
+    </div>
   </div>
   <div class="control-body">
     <div class="container-fluid">
@@ -154,6 +158,13 @@
             <span class="slider round"></span>
           </label>
           <span class="name-item"> Lưu lượng sử dụng</span>
+        </div>
+        <div class="col-xl-12">
+          <div class="control-list-btn">
+            <button (click)="closeControl()" type="button" class="btn-solar btn-silver">HỦY BỎ</button>
+            <button type="button" class="btn-solar btn-silver">LƯU CÀI ĐẶT</button>
+            <button type="button" class="btn-solar btn-reset">MẶC ĐỊNH</button>
+          </div>
         </div>
       </div>
     </div>

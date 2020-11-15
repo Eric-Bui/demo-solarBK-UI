@@ -115,8 +115,14 @@ body {
             &.active {
               color: rgba($sidebar-color, 0.9);
               background: #fff;
-              i {
-                color: #95b0ff;
+              img {
+  
+                &:first-child {
+                  display: none;
+                }
+                &:nth-child(2) {
+                  display: block !important;
+                }
               }
             }
           }

@@ -14,17 +14,13 @@
     </span>
   </div>
   <div class="background-img">
-    <img src="../../../assets/images/background.jpg" alt="" />
+    <img src="../../../assets/images/0.jpg" alt="" />
   </div>
   <div class="wrapper">
     <div class="landing-slogan">
-      <h2 class="landing-title">THAY ĐỔI NHỎ KHÁC BIỆT LỚN</h2>
-      <P class="landing-content"
-        >Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus
-        quidem accusantium aliquid officia tempore voluptatum in vel inventore,
-        dolore recusandae?</P
-      >
-      <button class="btn-solar">Xem Thêm</button>
+      <span>
+        <img src="../../../assets/images/slogan.png" alt="">
+      </span>
     </div>
     <div class="user-login">
       <!-- Nav tabs -->
@@ -41,71 +37,37 @@
       <div class="tab-content">
         <div id="login" class="container tab-pane active">
           <br />
-          <form
-            id="form_login"
-            class="form-login"
-            (ngSubmit)="onLogin()"
-            [formGroup]="loginForm"
-            formLogin
-          >
+          <form id="form_login" class="form-login" (ngSubmit)="onLogin()" [formGroup]="loginForm" formLogin>
             <div class="form-group">
               <label for="exampleInputEmail1">Tên đăng nhập</label>
-              <input
-                formControlName="email"
-                type="email"
-                class="form-control form-login"
-                id="exampleInputEmail1"
-                aria-describedby="emailHelp"
-              />
+              <input formControlName="email" type="email" class="form-control form-login" id="exampleInputEmail1"
+                aria-describedby="emailHelp" />
             </div>
             <div class="form-group">
               <label for="exampleInputPassword1">Mật khẩu</label>
-              <input
-                formControlName="password"
-                type="password"
-                class="form-control form-login"
-                id="exampleInputPassword1"
-              />
+              <input formControlName="password" type="password" class="form-control form-login"
+                id="exampleInputPassword1" />
             </div>
-           <div class="form-group form-control-login">
-            <button id="btn_login" type="submit" class="btn btn-solar">
-              <span id="login">Đăng nhập</span>
-              <span id="icon_loading" style="display: none">
-                <svg
-                  version="1.1"
-                  id="loader-1"
-                  xmlns="http://www.w3.org/2000/svg"
-                  xmlns:xlink="http://www.w3.org/1999/xlink"
-                  x="0px"
-                  y="0px"
-                  width="25px"
-                  height="25px"
-                  viewBox="0 0 50 50"
-                  style="enable-background: new 0 0 50 50"
-                  xml:space="preserve"
-                >
-                  <path
-                    fill="#fff"
-                    d="M43.935,25.145c0-10.318-8.364-18.683-18.683-18.683c-10.318,0-18.683,8.365-18.683,18.683h4.068c0-8.071,6.543-14.615,14.615-14.615c8.072,0,14.615,6.543,14.615,14.615H43.935z"
-                  >
-                    <animateTransform
-                      attributeType="xml"
-                      attributeName="transform"
-                      type="rotate"
-                      from="0 25 25"
-                      to="360 25 25"
-                      dur="0.6s"
-                      repeatCount="indefinite"
-                    />
-                  </path>
-                </svg>
-              </span>
-            </button>
-            <a href="" class="forgot-pw">Quên mật khẩu?</a>
-           </div>
+            <div class="form-group form-control-login">
+              <button id="btn_login" type="submit" class="btn btn-solar">
+                <span id="login">Đăng nhập</span>
+                <span id="icon_loading" style="display: none">
+                  <svg version="1.1" id="loader-1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="25px" height="25px"
+                    viewBox="0 0 50 50" style="enable-background: new 0 0 50 50" xml:space="preserve">
+                    <path fill="#fff"
+                      d="M43.935,25.145c0-10.318-8.364-18.683-18.683-18.683c-10.318,0-18.683,8.365-18.683,18.683h4.068c0-8.071,6.543-14.615,14.615-14.615c8.072,0,14.615,6.543,14.615,14.615H43.935z">
+                      <animateTransform attributeType="xml" attributeName="transform" type="rotate" from="0 25 25"
+                        to="360 25 25" dur="0.6s" repeatCount="indefinite" />
+                    </path>
+                  </svg>
+                </span>
+              </button>
+              <a href="" class="forgot-pw">Quên mật khẩu?</a>
+            </div>
           </form>
         </div>
-        
+
         <div id="solarBK" class="container tab-pane fade">
           <br />
           <h5>Đăng nhập bằng tài khoản của nhân viên SolarBK</h5>

@@ -3,9 +3,11 @@
 }
 
 .container-fluid {
+  font-family: Roboto-bold;
   position: relative;
   overflow: hidden;
-
+  background: rgb(0,93,170);
+  background: linear-gradient(180deg, rgba(0,93,170,1) 0%, rgba(182,234,222,1) 100%);
   .message-error {
     position: absolute;
     right: 0;

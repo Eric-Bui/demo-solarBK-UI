@@ -15,8 +15,8 @@ export class ReportComponent implements OnInit {
         {
           label: "Premium",
           data: [500, 800, 600, 1200, 800, 2000, 600],
-          backgroundColor: "transparent",
-          borderColor: "#5b6582",
+          // backgroundColor: "transparent",
+          borderColor: "#339836",
           borderWidth: 2,
         },
         // {
@@ -33,12 +33,21 @@ export class ReportComponent implements OnInit {
         yAxes: [
           {
             ticks: {
-              fontColor: "rgba(0,0,0,.6)",
+              fontColor: "white",
               fontStyle: "bold",
               beginAtZero: true,
               maxTicksLimit: 8,
               padding: 10,
             },
+            gridLines: { color: "white", drawBorder: false }
+          },
+        ],
+        xAxes: [
+          {
+            ticks: {
+              fontColor: "white",
+            },
+            gridLines: { color: "transparent" }
           },
         ],
       },
@@ -47,6 +56,11 @@ export class ReportComponent implements OnInit {
         position: "bottom",
         display: false,
       },
+        elements: {
+            point:{
+                radius: 0
+            }
+        }
     },
   };
   chart2 = {
@@ -56,7 +70,7 @@ export class ReportComponent implements OnInit {
         {
           label: "Population",
           data: [50, 80, 60, 120, 80, 100, 60],
-          backgroundColor: "#28d9ee",
+          backgroundColor: "#339836",
         },
       ],
     },
@@ -66,23 +80,32 @@ export class ReportComponent implements OnInit {
         yAxes: [
           {
             ticks: {
-              fontColor: "rgba(0,0,0,.6)",
+              fontColor: "white",
               fontStyle: "bold",
               beginAtZero: true,
               maxTicksLimit: 8,
               padding: 10,
             },
+            gridLines: { color: "white", drawBorder: false }
           },
         ],
         xAxes: [
           {
             barPercentage: 0.25,
+            ticks: {
+              fontColor: "white",
+            },
+            gridLines: { color: "transparent" }
           },
         ],
       },
       //responsive: true,
       legend: {
         position: "top",
+        labels: {
+          // This more specific font property overrides the global property
+          fontColor: '#fff'
+        }
       },
       title: {
         display: true,
@@ -91,12 +114,15 @@ export class ReportComponent implements OnInit {
       },
       plugins: {
         datalabels: {
-          color: "black",
+          color: "white",
           display: true,
           align: "center",
           anchor: "center",
         },
       },
+      chartArea: {
+        backgroundColor: '#054523'
+    }
     },
   };
 
