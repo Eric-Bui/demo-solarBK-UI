@@ -15,7 +15,7 @@ export class ReportComponent implements OnInit {
         {
           label: "Premium",
           data: [500, 800, 600, 1200, 800, 2000, 600],
-          // backgroundColor: "transparent",
+          backgroundColor: "transparent",
           borderColor: "#339836",
           borderWidth: 2,
         },

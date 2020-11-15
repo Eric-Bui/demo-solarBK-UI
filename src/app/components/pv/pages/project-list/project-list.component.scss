@@ -1,6 +1,3 @@
-.project-detail {
-    font-family: Roboto-bold;
-}
 
 .status-content {
     display: flex;
@@ -11,4 +8,126 @@
             margin-bottom: 15px;
         }
     }
+       .inverter-content {
+            margin-left: 0;
+            flex-grow: 1;
+            text-align: center;
+            h6 {
+                margin-bottom: 20px;
+            }
+            .inverter-list {
+                padding-inline-start: 10px;
+                list-style-type: none;
+                .inverter-item {
+                    display: flex;
+                    justify-content: center;
+                    p{
+                        padding: 10px;
+                        background: #339836;
+                        font-family: Roboto-bold;
+                        color: #fff;
+                        &:last-child {
+                            background: #006400;
+                            margin-left: 10px;
+                        }
+                    }
+                }
+            }
+    
+        }
 }
+.card {
+    border-radius: 20px;
+}
+
+.status-month {
+    height: 323px;
+    .energy-month {
+        margin-bottom: 30px;
+        padding-bottom: 30px;
+        border-bottom: 1px solid #e5e5e8;
+        .image-month {
+            img {
+                width: 85px;
+            }
+        }
+    }
+    
+}
+
+.project-content {
+    width: 100%;
+    position: relative;
+    .image-project {
+        padding-bottom: 30px;
+        width: 100%;
+        background: #e5e5e8;
+        img {
+            width: 100%;
+        }
+    }
+    .flow-energy {
+        position: absolute;
+        right: 144px;
+        bottom: 70px;
+    }
+    .pv-energy-now {
+        position: absolute;
+        top: 23%;
+        left: 66%;
+        color: #05c70a;
+        font-weight: bold;
+        font-size: 20px;
+    }
+}
+
+.project-info {
+    background: #339836;
+    padding: 10px 0;
+   color: #fff;
+   h6 {
+       font-size: 13px;
+   }
+   p {
+       font-size: 12px;
+   }
+}
+.weather-info {
+    background: #006400;
+    color: #fff;
+    padding: 10px 15px;
+    text-align: center;
+}
+.device-status {
+    text-align: center;
+    padding: 10px 15px;
+    >h6 {
+        font-size: 14px;
+    }
+
+    .device-content {
+        h6 {
+            font-size: 12px;
+        }
+        p {
+            font-size: 13px;
+        }
+    }
+
+
+}
+
+.card-chart {
+    background: rgba(#339836, .5);
+
+    h6 {
+        color: #fff;
+    }
+
+    .chart-container {
+        canvas {
+            height: 400px !important;
+        }
+    }
+}
+

@@ -35,6 +35,10 @@ span {
             display: block;
             transition: .2s;
 
+            span {
+              color: #fff;
+            }
+
             &:hover {
               text-decoration: none;
               color: #fff;

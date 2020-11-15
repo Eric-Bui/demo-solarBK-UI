@@ -2,8 +2,63 @@
   min-width: 115px;
 }
 
+.btn {
+  &:focus {
+    box-shadow: none;
+  }
+}
+
+.form-fogotPW {
+  display: none;
+}
+
+
+.support {
+  position: absolute;
+  top: 30%;
+  left: 0;
+  .support-btn {
+    padding: 20px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background: #006400;
+    width: fit-content;
+    cursor: pointer;
+    transition: .3s;
+    svg {
+      width: 20px;
+      height: 20px;
+      fill: #fff;
+      
+      animation: move 3s linear infinite;
+    }
+
+    .support-title {
+      color: #fff;
+      padding-right: 10px;
+    }
+    @keyframes move {
+      from { transform: rotate(0deg);}
+      to { transform: rotate(360deg);}
+    }
+
+  }
+  .support-content {
+    width: 500px;
+    height: auto;
+    transform: translateX(-100%);
+    transition: .4s;
+  }
+
+  .open {
+    transform: translateX(0);
+  }
+
+  
+}
+
 .container-fluid {
-  font-family: Roboto-bold;
+  font-family: Roboto;
   position: relative;
   overflow: hidden;
   background: rgb(0,93,170);
@@ -85,7 +140,7 @@
       background: rgba(255, 255, 255, 0.7);
       padding: 30px;
       border-radius: 10px;
-      min-height: 420px;
+      min-height: 466px;
 
       .nav-tabs {
         .nav-item {

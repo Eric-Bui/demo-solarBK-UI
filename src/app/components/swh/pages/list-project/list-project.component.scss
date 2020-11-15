@@ -7,10 +7,16 @@
   cursor: pointer;
 
   &:hover {
+    .image-address {
+      img {
+        transform: scale(1.05);
+      }
+    }
     svg {
       transform: scale(1.05);
     }
   }
+
 }
 .card {
   background: transparent;
@@ -61,6 +67,7 @@
     overflow: hidden;
     img {
       width: 100%;
+      transition: .5s;
     }
   }
 }

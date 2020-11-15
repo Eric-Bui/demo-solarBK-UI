@@ -1,20 +1,24 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { PvRoutes } from './pv.routing'
+import { PvRoutes } from './pv.routing';
 import { RouterModule } from '@angular/router';
 import { ProjectListComponent } from './pages/project-list/project-list.component';
 import { NavbarPvComponent } from './layout/navbar-pv/navbar-pv.component';
 import { SidebarPvComponent } from './layout/sidebar-pv/sidebar-pv.component';
-
-
+import { StatisticComponent } from './pages/statistic/statistic.component';
+import { InfoWarrantyComponent } from './pages/warranty/info-warranty/info-warranty.component';
+import { ListWarrantyComponent } from './pages/warranty/list-warranty/list-warranty.component';
 
 @NgModule({
-  declarations: [ProjectListComponent, NavbarPvComponent, SidebarPvComponent],
-  imports: [
-    CommonModule, RouterModule.forChild(PvRoutes)
+  declarations: [
+    ProjectListComponent,
+    NavbarPvComponent,
+    SidebarPvComponent,
+    StatisticComponent,
+    InfoWarrantyComponent,
+    ListWarrantyComponent,
   ],
-  exports: [
-    NavbarPvComponent, SidebarPvComponent
-  ]
+  imports: [CommonModule, RouterModule.forChild(PvRoutes)],
+  exports: [NavbarPvComponent, SidebarPvComponent],
 })
-export class PvModule { }
+export class PvModule {}

@@ -1,0 +1,26 @@
+.nav-statistic {
+    .nav-item {
+        flex-grow: 1;
+
+        a {
+            color: inherit;
+        }
+    }
+}
+
+.report-title {
+    padding: 10px;
+    .export-data {
+        text-align: right;
+        margin-right: 30px;
+        span {
+            &:last-child {
+                margin-left: 10px;
+                cursor: pointer;
+            }
+        }
+        img {
+            height: 40px;
+        }
+    }
+}

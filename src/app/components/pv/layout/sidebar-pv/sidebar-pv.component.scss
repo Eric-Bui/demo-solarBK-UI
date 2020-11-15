@@ -85,6 +85,19 @@
           padding-left: 10px;
         }
       }
+
+      .nav-item-warranty {
+        .nav-warranty {
+          li {
+            width: 100%;
+            a {
+              span {
+                font-size: 14px;
+              }
+            }
+          }
+        }
+      }
       
     }
   }

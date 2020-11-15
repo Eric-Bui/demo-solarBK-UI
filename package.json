@@ -20,6 +20,8 @@
     "@angular/platform-browser-dynamic": "~9.1.12",
     "@angular/router": "~9.1.12",
     "@ngrx/store": "^10.0.1",
+    "animate.css": "^4.1.1",
+    "aos": "^2.3.4",
     "bootstrap": "^4.5.3",
     "chart.js": "^2.9.3",
     "jquery": "^3.5.1",

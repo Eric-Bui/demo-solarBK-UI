@@ -40,20 +40,13 @@
           </a>
         </li>
         <li class="nav-info-item">
-          <a routerLink="/swh/project-status" routerLinkActive="active" class="nav-link">
-            <img src="../../../../../assets/images/icon-status.png" alt="">
-            <img src="../../../../../assets/images/icon-status-active.png" alt="" style="display: none;">
-            <span>Trạng thái hệ thống</span>
-          </a>
-        </li>
-        <li class="nav-info-item">
-          <a routerLink="/swh/report" routerLinkActive="active" class="nav-link">
+          <a routerLink="/pv/statistic" routerLinkActive="active" class="nav-link">
             <img src="../../../../../assets/images/icon-report.png" alt="">
             <img src="../../../../../assets/images/icon-report-active.png" alt="" style="display: none;">
             <span>Thống kê & Báo cáo</span>
           </a>
         </li>
-        <li class="nav-info-item">
+        <li class="nav-info-item nav-item-warranty">
           <a data-toggle="collapse" href="#collapWarranty" class="nav-link">
             <img src="../../../../../assets/images/icon-Guarantee.png" alt="">
             <img src="../../../../../assets/images/icon-Guarantee-select.png" alt="" style="display: none;">
@@ -63,14 +56,14 @@
             </span>
           </a>
           <div class="collapse " id="collapWarranty">
-            <ul class="nav">
+            <ul class="nav nav-warranty">
               <li class="active">
-                <a href="../../examples/pages/timeline.html">
+                <a routerLink="/pv/info-warranty" routerLinkActive="active">
                   <span class="sidebar-normal">Thông tin bảo hành</span>
                 </a>
               </li>
               <li>
-                <a href="../../examples/pages/login.html" >
+                <a routerLink="/pv/list-warranty" routerLinkActive="active" >
                   <span class="sidebar-normal"> Danh sách thiết bị </span>
                 </a>
               </li>
