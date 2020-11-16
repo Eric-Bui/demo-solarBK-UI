@@ -55,7 +55,7 @@
               <b class="caret"></b>
             </span>
           </a>
-          <div class="collapse " id="collapWarranty">
+          <div class="collapse" id="collapWarranty">
             <ul class="nav nav-warranty">
               <li class="active">
                 <a routerLink="/pv/info-warranty" routerLinkActive="active">
@@ -71,19 +71,46 @@
           </div>
         </li>
         <li class="nav-info-item">
-          <a routerLink="/admin/logger" routerLinkActive="active" class="nav-link">
+          <a routerLink="/pv/insure" routerLinkActive="active" class="nav-link">
             <img src="../../../../../assets/images/icon_Report.png" alt="">
             <img src="../../../../../assets/images/icon_Report-select.png" alt="" style="display: none;">
   
             <span>Bảo hiểm</span>
           </a>
         </li>
-        <li class="nav-info-item">
-          <a routerLink="/admin/logger" routerLinkActive="active" class="nav-link">
+        <li class="nav-info-item nav-item-warranty">
+          <a data-toggle="collapse" href="#collapSupport" class="nav-link">
             <img src="../../../../../assets/images/icon-Community.png" alt="">
             <img src="../../../../../assets/images/icon-Community-select.png" alt="" style="display: none;">
-            <span>Hỗ trợ</span>
+  
+            <span>Hỗ trợ
+              <b class="caret"></b>
+            </span>
           </a>
+          <div class="collapse " id="collapSupport">
+            <ul class="nav nav-warranty">
+              <li class="active">
+                <a routerLink="/pv/create-request" routerLinkActive="active">
+                  <span class="sidebar-normal">Tạo yêu cầu</span>
+                </a>
+              </li>
+              <li>
+                <a routerLink="" >
+                  <span class="sidebar-normal"> Danh sách yêu cầu </span>
+                </a>
+              </li>
+              <li>
+                <a routerLink="" >
+                  <span class="sidebar-normal"> Thông tin bảo trì </span>
+                </a>
+              </li>
+              <li>
+                <a routerLink="/pv/reference" routerLinkActive="active" >
+                  <span class="sidebar-normal"> Hướng dẫn sử dụng </span>
+                </a>
+              </li>
+            </ul>
+          </div>
         </li>
       </ul>
     </nav>

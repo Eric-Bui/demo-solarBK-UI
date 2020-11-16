@@ -1,3 +1,15 @@
 .form-group {
-    margin-bottom: 30px;
+  margin-bottom: 30px;
+}
+
+input {
+  &:focus,
+  &:active {
+    box-shadow: none;
+    border: 1px solid #339836;
+  }
+}
+
+.user-changepw {
+  height: calc(100vh - 277px);
 }

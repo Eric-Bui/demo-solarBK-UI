@@ -1,0 +1,36 @@
+.card {
+  .card-icon {
+    img {
+      width: 100%;
+    }
+  }
+
+  .card-info {
+    .card-name {
+      color: #51cbce;
+      font-weight: 600;
+      text-align: center;
+    }
+    margin-top: 20px;
+
+    p {
+      margin-left: 20px;
+    }
+  }
+}
+
+.card-header {
+  //   background: #006400;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  .title {
+    color: #fff;
+  }
+}
+
+button {
+  &:active,
+  &:focus {
+    box-shadow: none;
+  }
+}

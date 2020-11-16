@@ -1,0 +1,10 @@
+.create-request {
+  input,
+  textarea {
+    &:focus,
+    &:active {
+      box-shadow: none;
+      border: 1px solid #339836;
+    }
+  }
+}

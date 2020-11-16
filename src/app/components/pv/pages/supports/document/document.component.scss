@@ -1,0 +1,29 @@
+.support {
+  height: calc(100vh - 277px);
+  .support-header {
+    margin-bottom: 30px;
+  }
+
+  .support-content {
+    .card-header {
+      background: rgba(#006400, 0.8);
+      transition: 0.3s;
+      h2 {
+        button {
+          color: #fff;
+        }
+      }
+
+      &:hover {
+        background: #006400;
+      }
+    }
+  }
+
+  button {
+    &:focus,
+    &:active {
+      box-shadow: none;
+    }
+  }
+}
