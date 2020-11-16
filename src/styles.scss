@@ -3,8 +3,13 @@
 @import "./assets/admin.scss";
 
 @font-face {
-  src: url(./assets/fonts/Roboto-Light.ttf);
+  src: url(./assets/fonts/Roboto-Regular.ttf);
   font-family: Roboto;
+}
+
+@font-face {
+  src: url(./assets/fonts/Roboto-Bold.ttf);
+  font-family: Roboto-bold;
 }
 
 body {
@@ -12,8 +17,8 @@ body {
   font-weight: 400;
 }
 
-$primary-color: #0ea287;
-$secondara-color: #89c941;
+$primary-color: #006400;
+$secondary-color: #89c941;
 $white-color: #fff;
 $black-color: #000;
 

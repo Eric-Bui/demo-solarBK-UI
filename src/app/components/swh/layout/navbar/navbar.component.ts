@@ -12,4 +12,8 @@ export class NavbarComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  closeControl() {
+    $('#control_content').removeClass('open');
+  }
+
 }

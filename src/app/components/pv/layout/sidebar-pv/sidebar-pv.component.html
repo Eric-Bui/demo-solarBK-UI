@@ -1,0 +1,91 @@
+<aside class="sidebar shadow-sm">
+    <div class="sidebar-info pt-1 pb-1 pl-3 pr-3">
+      <a data-toggle="collapse" href="#collapInfo">
+        <div class="info-user">
+          <span class="info-image">
+            <img src="../../../../../assets/images/user.jpg" class="img-fluid" alt="">
+            <span>Windsor Plaza
+              <b class="caret"></b>
+            </span>
+          </span>
+        </div>
+      </a>
+      <div class="collapse collapse-info" id="collapInfo">
+        <ul class="nav-info nav">
+          <li>
+            <a routerLink="/swh/user-info" class="">
+              <span class="sidebar-normal">Thông tin tài khoản</span>
+            </a>
+          </li>
+          <li>
+            <a routerLink="/swh/change-password">
+              <span class="sidebar-normal">Đổi mật khẩu</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="sidebar-normal">Đăng xuất</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <nav class="sidebar-menu pt-3 pb-3">
+      <ul class="menu-items">
+        <li class="nav-info-item">
+          <a routerLink="/pv/project-list" routerLinkActive="active" class="nav-link">
+           <img src="../../../../../assets/images/pv/icon-pvsystem.png" alt="">
+           <img src="../../../../../assets/images/pv/icon-pvsystem-select.png" alt="" style="display: none;">
+            <span>Tổng quan hệ thống</span>
+          </a>
+        </li>
+        <li class="nav-info-item">
+          <a routerLink="/pv/statistic" routerLinkActive="active" class="nav-link">
+            <img src="../../../../../assets/images/icon-report.png" alt="">
+            <img src="../../../../../assets/images/icon-report-active.png" alt="" style="display: none;">
+            <span>Thống kê & Báo cáo</span>
+          </a>
+        </li>
+        <li class="nav-info-item nav-item-warranty">
+          <a data-toggle="collapse" href="#collapWarranty" class="nav-link">
+            <img src="../../../../../assets/images/icon-Guarantee.png" alt="">
+            <img src="../../../../../assets/images/icon-Guarantee-select.png" alt="" style="display: none;">
+  
+            <span>Bảo hành
+              <b class="caret"></b>
+            </span>
+          </a>
+          <div class="collapse " id="collapWarranty">
+            <ul class="nav nav-warranty">
+              <li class="active">
+                <a routerLink="/pv/info-warranty" routerLinkActive="active">
+                  <span class="sidebar-normal">Thông tin bảo hành</span>
+                </a>
+              </li>
+              <li>
+                <a routerLink="/pv/list-warranty" routerLinkActive="active" >
+                  <span class="sidebar-normal"> Danh sách thiết bị </span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="nav-info-item">
+          <a routerLink="/admin/logger" routerLinkActive="active" class="nav-link">
+            <img src="../../../../../assets/images/icon_Report.png" alt="">
+            <img src="../../../../../assets/images/icon_Report-select.png" alt="" style="display: none;">
+  
+            <span>Bảo hiểm</span>
+          </a>
+        </li>
+        <li class="nav-info-item">
+          <a routerLink="/admin/logger" routerLinkActive="active" class="nav-link">
+            <img src="../../../../../assets/images/icon-Community.png" alt="">
+            <img src="../../../../../assets/images/icon-Community-select.png" alt="" style="display: none;">
+            <span>Hỗ trợ</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </aside>
+  

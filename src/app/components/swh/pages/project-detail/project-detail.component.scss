@@ -1,0 +1,60 @@
+svg {
+    height: 100px;
+    width: 100px;
+    opacity: 0.7;
+  }
+
+  .card {
+    border-radius: 20px;
+  }
+
+  .card-cool-input {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
+  .card-hot-output {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+
+  .status-connect {
+    .card-title {
+      justify-content: space-around;
+      h6 {
+        margin-left: 45px;
+      }
+    }
+    .card-body {
+      padding-top: 0;
+
+    }
+    .status-content {
+      display: flex;
+      justify-content: space-around;
+      span {
+        display: block;
+      }
+     .time-connect {
+       display: flex;
+      //  justify-content: center;
+       align-items: center;
+     }
+    }
+  }
+
+  .image-project {
+    height: 100%;
+    width: 100%;
+    .project-title {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      text-align: right;
+      padding: 10px;
+      border-radius: 10px;
+      background: #006400;
+      color: #fff;
+      font-family: Roboto-Bold;
+    }
+  }

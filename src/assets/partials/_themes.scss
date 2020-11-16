@@ -4,7 +4,7 @@
 $bg-color: #f2f3f8;
 $navbar-bg-color: #0ea287;
 $navbar-color: #6e7899;
-$sidebar-bg-color: #fff;
+$sidebar-bg-color: #c2c2c6;
 $sidebar-color: #3d4465;
 $sidebar-icon-color: #c4cff9;
 $border-color: #f2f3f8;
@@ -113,11 +113,16 @@ body {
 
             &:hover,
             &.active {
-              background: #f5f5f9;
               color: rgba($sidebar-color, 0.9);
-
-              i {
-                color: #95b0ff;
+              background: #fff;
+              img {
+  
+                &:first-child {
+                  display: none;
+                }
+                &:nth-child(2) {
+                  display: block !important;
+                }
               }
             }
           }

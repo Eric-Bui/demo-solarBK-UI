@@ -10,18 +10,24 @@ import { GlobalModule } from "./global/global.module";
 
 import { AdminModule } from './components/admin/admin.module';
 import { SwhModule } from './components/swh/swh.module'
+import { PvModule } from './components/pv/pv.module'
 
 import { AppComponent } from './app.component';
 import { AdminComponent } from './components/admin/admin.component';
 import { LoginComponent } from './components/login/login.component';
 import { SwhComponent } from './components/swh/swh.component';
+import { PvComponent } from './components/pv/pv.component';
+import { LandingComponent } from './components/landing/landing.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     AdminComponent,
     LoginComponent,
-    SwhComponent
+    SwhComponent,
+    PvComponent,
+    LandingComponent,
   ],
   imports: [
     BrowserModule,
@@ -32,6 +38,7 @@ import { SwhComponent } from './components/swh/swh.component';
     ReactiveFormsModule,
     HttpClientModule,
     GlobalModule,
+    PvModule,
     StoreModule.forRoot({})
   ],
   providers: [],

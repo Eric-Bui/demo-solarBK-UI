@@ -10,6 +10,7 @@ export class SwhComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    $('#navbar_list').hide()
   }
 
 }
