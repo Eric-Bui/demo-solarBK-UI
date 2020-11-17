@@ -16,7 +16,6 @@
       transform: scale(1.05);
     }
   }
-
 }
 .card {
   background: transparent;
@@ -30,11 +29,9 @@
   .address-content {
     background: #339836;
     border-radius: 20px;
-    
+
     .address-title {
-      padding: 20px;
-      display: flex;
-      justify-content: space-between;
+      padding: 15px;
 
       h4 {
         padding: 20px;
@@ -44,12 +41,21 @@
         height: fit-content;
         padding-bottom: 20px;
         color: #fff;
+        font-size: 18px;
+        margin-left: auto;
       }
 
       h5 {
         margin-top: 10px;
         margin-right: 5px;
         color: #fff;
+        display: flex;
+        font-size: 14px;
+        justify-content: space-between;
+        font-family: Roboto;
+        .status-title {
+          margin: auto;
+        }
 
         .image-status {
           display: block;
@@ -60,14 +66,15 @@
     .project-title {
       color: #fff;
       text-align: center;
+      margin-top: 20px;
     }
   }
   .image-address {
-    height: 400px;
+    height: 200px;
     overflow: hidden;
     img {
       width: 100%;
-      transition: .5s;
+      transition: 0.5s;
     }
   }
 }
@@ -82,7 +89,6 @@
   border-bottom-right-radius: 20px;
   .footer-title {
     color: #339836;
-
   }
   .footer-content {
     color: #fff;
